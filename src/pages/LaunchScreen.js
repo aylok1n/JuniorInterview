@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     mainButton: {
         zIndex: 10,
         backgroundColor: '#FFFFFF',
-        borderRadius: 50,
+        borderRadius: 30,
         paddingHorizontal: 100,
         paddingVertical: 25
     },
