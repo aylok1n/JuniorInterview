@@ -7,9 +7,6 @@ export const LoginScreen = (props) => {
     const [email, setEmail] = React.useState('Dosamarvis@gmail.com')
     const [password, setPassword] = React.useState('12345678')
     const [loaded] = useFonts({
-        'SF-Pro-Rounded-Bold': {
-            uri: require('../assets/fonts/SF-Pro-Rounded-Bold.otf'),
-        },
         'SF-Pro-Text': {
             uri: require('../assets/fonts/SF-Pro-Text.otf'),
         },
