@@ -59,7 +59,7 @@ export const HomeScreen = (props) => {
                     </TouchableOpacity>
                 </ScrollView>
                 <ScrollView showsHorizontalScrollIndicator={false} scrollEnabled={false} horizontal={true} style={styles.foods} contentContainerStyle={{ paddingHorizontal: '10%' }}>
-                    <Pressable onPress={() => props.navigation.navigate('ProfileScreen')} style={styles.dishItemShadow}>
+                    <Pressable onPress={() => props.navigation.navigate('DishScreen')} style={styles.dishItemShadow}>
                         <Image resizeMode={'contain'} style={styles.dishImage} source={require('../assets/img/HomeScreen/Dish1.png')} />
                         <View style={styles.dishItem}>
                             <View style={{ marginTop: '25%' }}>

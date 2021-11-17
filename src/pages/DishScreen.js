@@ -25,7 +25,7 @@ export const DishScreen = (props) => {
         <View style={{ flex: 1 }}>
             <ScrollView contentContainerStyle={styles.container}>
                 <View style={styles.headerButtonsContainer}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => props.navigation.goBack()}>
                         <Image style={{ height: 22, width: 22 }} resizeMode='contain' source={require('../assets/img/DishScreen/backArrow.png')} />
                     </TouchableOpacity>
                     <TouchableOpacity>
