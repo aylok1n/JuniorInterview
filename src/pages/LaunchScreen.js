@@ -8,9 +8,10 @@ export const LaunchScreen = (props) => {
             uri: require('../assets/fonts/SF-Pro-Rounded-Bold.otf'),
         },
         'SF-Pro-Text': {
-            uri: require('../assets/fonts/SF-Pro-Text.otf'),
+            uri: require('../assets/fonts/SF-Pro-Regular.ttf'),
         },
     });
+    const buttonTitle = 'Get starteed'
 
     return (
         <View style={styles.container}>
@@ -23,7 +24,7 @@ export const LaunchScreen = (props) => {
             <Image style={styles.mainImage} source={require('../assets/img/LaunchScreen/mainImg.png')} />
             <View style={styles.mainButtonContainer}>
                 <TouchableOpacity onPressIn={() => props.navigation.navigate('LoginScreen')} style={styles.mainButton}>
-                    <Text style={styles.mainButtonText}>Get starteed</Text>
+                    <Text style={styles.mainButtonText}>{buttonTitle}</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -59,13 +60,13 @@ const styles = StyleSheet.create({
     mainText: {
         fontFamily: 'SF-Pro-Rounded-Bold',
         fontSize: 65,
-        lineHeight: 62,
+        lineHeight: 64,
         marginTop: 20,
         color: '#FFFFFF'
     },
     mainImage: {
         width: width,
-        height: width * 1.2
+        height: width * 1.3
     },
     mainButtonContainer: {
         width: width,
