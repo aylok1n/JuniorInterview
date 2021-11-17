@@ -1,7 +1,6 @@
 import React from "react";
-import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View, ScrollView } from "react-native";
 import { useFonts } from 'expo-font';
-import { ScrollView } from "react-native-gesture-handler";
 
 export const DishScreen = (props) => {
     const [loaded] = useFonts({
